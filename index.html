@@ -1,11 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alem</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alem's Portfolio</title>
+    <link rel="shortcut icon" href="./img/logomini.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[rgb(40,44,52)] relative">
+    <!-- header start -->
+    <header class="sticky top-0 z-50 ">
+      <div
+        class="absolute xl:flex items-center flex-col gap-4 left-14 xs:hidden"
+      >
+        <div class="w-[2px] h-[250px] bg-[rgb(162,168,180)]"></div>
+        <button class="text-[rgb(162,168,180)] text-2xl animate-pulse">
+          <a href="https://github.com/Astrum-07" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </button>
+        <button class="text-[rgb(162,168,180)] text-2xl animate-pulse">
+          <a href="https://dribbble.com/astro-astrum" target="_blank"
+            ><i class="fa-brands fa-dribbble"></i
+          ></a>
+        </button>
+        <button class="text-[rgb(162,168,180)] text-2xl animate-pulse">
+          <a href="https://www.figma.com/@astroastrum" target="_blank"
+            ><i class="fa-brands fa-figma"></i
+          ></a>
+        </button>
+      </div>
+      <div class="mycontainer bg-[rgb(44,48,54)]">
+        <nav class="navbar flex items-center justify-between py-4">
+          <nav>
+            <p class="font-bold text-white text-xl flex items-center gap-3">
+              <img class="w-5" src="./img/logomini.png" alt="" />Alem
+            </p>
+          </nav>
+
+          <nav class="flex items-center gap-3">
+            <ul class="sm:flex xs:hidden items-center md:gap-6 sm:gap-3">
+              <li>
+                <a
+                  class="font-medium text-xl text-[rgb(162,168,180)] hover:text-white transition-[1s] cursor-pointer"
+                  href="./index.html"
+                  ><span class="text-[rgb(187,116,206)]">#</span>home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium text-xl text-[rgb(162,168,180)] hover:text-white transition-[1s] cursor-pointer"
+                  href="./skills.html"
+                  ><span class="text-[rgb(187,116,206)]">#</span>works</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium text-xl text-[rgb(162,168,180)] hover:text-white transition-[1s] cursor-pointer"
+                  href="./project.html"
+                  ><span class="text-[rgb(187,116,206)]">#</span>about-me</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium text-xl text-[rgb(162,168,180)] hover:text-white transition-[1s] cursor-pointer"
+                  href="./contact.html"
+                  ><span class="text-[rgb(187,116,206)]">#</span>contacts</a
+                >
+              </li>
+            </ul>
+            <div class="relative xr:inline-block xs:hidden">
+              <button
+                id="langBtn"
+                class="border-none px-4 py-2 rounded-lg text-[rgb(162,168,180)] font-semibold flex items-center justify-center w-28 transition-all duration-200"
+              >
+                <span id="selectedLang">ENG</span>
+                <span class="ml-2">▼</span>
+              </button>
+
+              <ul
+                id="langOptions"
+                class="absolute hidden bg-[rgb(187,116,206)] border shadow-lg mt-1 w-full overflow-hidden transition-all duration-200"
+              >
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">ENG</li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">RU</li>
+                <li class="px-4 py-2 hover:bg-blue-100 cursor-pointer">UZB</li>
+              </ul>
+            </div>
+            <p class="text-[rgb(162,168,180)] text-2xl sm:hidden xs:block">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </p>
+          </nav>
+        </nav>
+      </div>
+    </header>
+    <!-- header end-->
+
+    <main>
+
+    <!-- hero start -->
+    <section>
+      <div class="mycontainer">
+        <div
+          class="p sm:pt-[80px] xs:py-[30px] flex sm:flex-row xs:flex-col items-center justify-between sm:gap-2 xs:gap-10"
+        >
+          <div class="l sm:w-[50%] flex flex-col sm:gap-10 xs:gap-5">
+            <h1 class="font-semibold text-[32px] text-white">
+              Alem is a
+              <span class="text-[rgb(187,116,206)]">web designer</span> and
+              <span class="text-[rgb(187,116,206)]">front-end developer</span>
+            </h1>
+
+            <p
+              class="font-normal text-base leading-[156%] text-[rgb(162,168,180)]"
+            >
+              He crafts responsive websites where technologies meet creativity
+            </p>
+            <button
+              class="border border-[rgb(187,116,206)] font-medium text-base px-4 py-2 border-solid text-white animation_btn hover:bg-[rgb(187,116,206)] cursor-pointer transition-[1s] w-[160px]"
+            >
+              Contact me!!
+            </button>
+          </div>
+
+          <div class="r">
+            <img src="./img/hero.png" alt="heroman" />
+            <span
+              class="w-auto font-medium text-base flex items-center gap-2 border border-solid border-[rgb(162,168,180)] p-[5px]"
+              ><div class="w-[20px] h-[20px] bg-[rgb(187,116,206)]"></div>
+              <span class="text-[rgb(162,168,180)]">Currently working on </span
+              ><a class="text-white" href="">Portfolio</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- matn start -->
+    <section>
+      <div class="mycontainer">
+        <div class="sm:py-[90px] xs:py-[30px]">
+          <div class="flex flex-col items-end mx-auto sm:w-[60%] xs:w-full">
+            <p
+              class="font-medium sm:text-2xl xs:text-xl text-white border p-8 border-solid border-[gray] relative z-10"
+            >
+              With great power comes great electricity bill
+              <span
+                class="text-[80px] left-5 top-[-30px] text-[gray] bg-[rgb(44,48,54)] z-[-1] absolute"
+                >“</span
+              >
+            </p>
+            <p
+              class="font-medium sm:text-2xl xs:text-sm text-white border p-8 border-solid border-[gray] relative z-10"
+            >
+              - Dr. Who
+              <span
+                class="text-[80px] right-8 top-[-30px] text-[gray] bg-[rgb(44,48,54)] z-[-1] absolute"
+                >“</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- matn end -->
+
+    <!-- projects start -->
+    <section>
+      <div class="mycontainer py-[50px]">
+        <div class="t flex items-center justify-between gap-3 py-[50px]">
+          <div class="l sm:w-[65%] xs:w-[50%] flex items-center gap-5">
+            <p class="font-medium sm:text-[32px] xs:text-[18px] text-white">
+              <span class="text-[rgb(187,116,206)]">#</span>projects
+            </p>
+            <div class="h-[1px] w-[100%] bg-[rgb(187,116,206)]"></div>
+          </div>
+
+          <div class="r flex items-center gap-2">
+            <p class="font-medium sm:text-base xs:text-[14px] text-white">
+              View all
+            </p>
+            <p class="font-medium text-base text-white">~~></p>
+          </div>
+        </div>
+
+        <div class="b grid lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-9">
+          <div
+            class="box border-solid border border-[gray] pb-[20px] animate-pulse"
+          >
+            <img src="./img/ecobazar.png" alt="ecobazar" />
+            <p
+              class="font-normal text-base text-[gray] p-[5px] border-solid border-y border-[gray]"
+            >
+              HTML CSS JavaScript
+            </p>
+            <h3 class="font-medium text-2xl text-white p-[10px]">Ecobazar</h3>
+            <p class="font-normal text-base text-[gray] p-[10px] mb-[10px]">
+              Marketpleyst
+            </p>
+            <div class="flex items-center gap-3 pl-[10px]">
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://ecobazar-fawn.vercel.app/"
+                  >Live ~~></a
+                >
+              </button>
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://github.com/Astrum-07/ecobazar.git"
+                  >Git Hub ></a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="box border-solid border border-[gray] pb-[20px]">
+            <img src="./img/yevraziya.png" alt="ecobazar" />
+            <p
+              class="font-normal text-base text-[gray] p-[5px] border-solid border-y border-[gray]"
+            >
+              HTML CSS JavaScript
+            </p>
+            <h3 class="font-medium text-2xl text-white p-[10px]">Evraziya</h3>
+            <p class="font-normal text-base text-[gray] p-[10px] mb-[10px]">
+              Travel
+            </p>
+            <div class="flex items-center gap-3 pl-[10px]">
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://yevraziya.vercel.app/"
+                  >Live ~~></a
+                >
+              </button>
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://github.com/Astrum-07/yevraziya.git"
+                  >Git Hub ></a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="box border-solid border border-[gray] pb-[20px] animate-pulse"
+          >
+            <img src="./img/universal.png" alt="ecobazar" />
+            <p
+              class="font-normal text-base text-[gray] p-[5px] border-solid border-y border-[gray]"
+            >
+              HTML CSS JavaScript
+            </p>
+            <h3 class="font-medium text-2xl text-white p-[10px]">Universal</h3>
+            <p class="font-normal text-base text-[gray] p-[10px] mb-[10px]">
+              Web site universal
+            </p>
+            <div class="flex items-center gap-3 pl-[10px]">
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://universal-rust.vercel.app/"
+                  >Live ~~></a
+                >
+              </button>
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://github.com/Astrum-07/universal.git"
+                  >Git Hub ></a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="box border-solid border border-[gray] pb-[20px]">
+            <img src="./img/portfolio.png" alt="ecobazar" />
+            <p
+              class="font-normal text-base text-[gray] p-[5px] border-solid border-y border-[gray]"
+            >
+              HTML CSS JavaScript
+            </p>
+            <h3 class="font-medium text-2xl text-white p-[10px]">Portfolio</h3>
+            <p class="font-normal text-base text-[gray] p-[10px] mb-[10px]">
+              Portfolio Web site
+            </p>
+            <div class="flex items-center gap-3 pl-[10px]">
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://portfolio-phi-rouge-zrhranocvg.vercel.app/"
+                  >Live ~~></a
+                >
+              </button>
+              <button>
+                <a
+                  class="font-medium text-base text-white border border-solid border-[rgb(187,116,206)] py-[7px] px-[13px] hover:bg-[rgb(187,116,206)] transition-[1s] cursor-pointer"
+                  href="https://github.com/Astrum-07/portfolio.git"
+                  >Git Hub ></a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects end-->
+
+    <!-- skill start -->
+    <section>
+      <div class="mycontainer">
+        <div class="t flex items-center justify-between gap-3 py-[50px]">
+          <div class="l sm:w-[65%] xs:w-[50%] flex items-center gap-5">
+            <p class="font-medium sm:text-[32px] xs:text-[18px] text-white">
+              <span class="text-[rgb(187,116,206)]">#</span>skills
+            </p>
+            <div class="h-[1px] w-[100%] bg-[rgb(187,116,206)]"></div>
+          </div>
+        </div>
+
+        <div
+          class="b flex md:flex-row xs:flex-col xs:gap-10 md:items-center xs:items-start justify-between md:gap-3"
+        >
+          <div class="xr:w-auto xs:w-full">
+            <img src="./img/skillsimg.png" alt="" />
+          </div>
+
+          <div class="r flex xr:flex-row xs:flex-col items-start gap-6">
+            <div
+              class="box border border-solid border-[gray] xr:w-auto xs:w-full"
+            >
+              <p
+                class="font-semibold text-base text-white border-b border-solid border-[gray] p-[5px]"
+              >
+                Languages
+              </p>
+              <p class="font-semibold text-base text-[gray] p-[5px]">
+                TypeScript Lua
+              </p>
+              <p class="font-semibold text-base text-[gray] p-[5px]">
+                JavaScript
+              </p>
+            </div>
+
+            <div class="flex items-center flex-col gap-5 xl:w-auto xs:w-full">
+              <div
+                class="box border border-solid border-[gray] xl:w-auto xs:w-full"
+              >
+                <p
+                  class="font-semibold text-base text-white border-b border-solid border-[gray] p-[5px]"
+                >
+                  Databases
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  SQLite PostgreSQL
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">Mongo</p>
+              </div>
+
+              <div
+                class="box border border-solid border-[gray] xl:w-auto xs:w-full"
+              >
+                <p
+                  class="font-semibold text-base text-white border-b border-solid border-[gray] p-[5px]"
+                >
+                  Other
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  HTML CSS EJS SCSS
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  REST Jinja
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-5 xl:w-auto xs:w-full">
+              <div
+                class="box border border-solid border-[gray] xl:w-auto xs:w-full"
+              >
+                <p
+                  class="font-semibold text-base text-white border-b border-solid border-[gray] p-[5px]"
+                >
+                  Tools
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  VSCode Neovim Linux Lua
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  Figma XFCE Arch
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  Git Font Awesome
+                </p>
+              </div>
+
+              <div
+                class="box border border-solid border-[gray] xl:w-auto xs:w-full"
+              >
+                <p
+                  class="font-semibold text-base text-white border-b border-solid border-[gray] p-[5px]"
+                >
+                  Frameworks
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  React Vue Lua Lua
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  Disnake Discord.js JavaScript
+                </p>
+                <p class="font-semibold text-base text-[gray] p-[5px]">
+                  Flask Express.js
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill end -->
+
+    <!-- about start -->
+    <section>
+      <div class="mycontainer">
+        <div class="t flex items-center justify-between gap-3 py-[50px]">
+          <div class="l w-full flex items-center gap-5">
+            <p class="font-medium sm:text-[32px] xs:text-[18px] text-white">
+              <span class="text-[rgb(187,116,206)]">#</span>about-me
+            </p>
+            <div class="h-[1px] w-[50%] bg-[rgb(187,116,206)]"></div>
+          </div>
+        </div>
+
+        <div
+          class="b flex md:flex-row xs:flex-col items-center justify-between gap-4"
+        >
+          <div class="l md:w-[45%] xs:w-full flex flex-col gap-6">
+            <p class="font-normal text-base leading-[162%] text-[gray]">
+              Hello, i’m Alem!
+            </p>
+            <p class="font-normal text-base leading-[162%] text-[gray]">
+              I’m a self-taught front-end developer based in Kyiv, Ukraine. I
+              can develop responsive websites from scratch and raise them into
+              modern user-friendly web experiences.
+            </p>
+
+            <p class="font-normal text-base leading-[162%] text-[gray]">
+              Transforming my creativity and knowledge into a websites has been
+              my passion for over a year. I have been helping various clients to
+              establish their presence online. I always strive to learn about
+              the newest technologies and frameworks.
+            </p>
+
+            <button
+              class="border border-[rgb(187,116,206)] font-medium text-base px-4 py-2 border-solid text-white animation_btn hover:bg-[rgb(187,116,206)] cursor-pointer transition-[1s] w-[160px]"
+            >
+              Read more ->
+            </button>
+          </div>
+
+          <div class="r">
+            <img src="./img/about.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end-->
+
+    <!-- contact start -->
+    <section>
+      <div class="mycontainer">
+        <div class="t flex items-center justify-between gap-3 py-[50px]">
+          <div class="l w-full flex items-center gap-5">
+            <p class="font-medium sm:text-[32px] xs:text-[18px] text-white">
+              <span class="text-[rgb(187,116,206)]">#</span>contacts
+            </p>
+            <div class="h-[1px] w-[50%] bg-[rgb(187,116,206)]"></div>
+          </div>
+        </div>
+
+        <div
+          class="b flex sm:flex-row xs:flex-col items-start justify-between sm:gap-2 xs:gap-5"
+        >
+          <div class="l md:w-[45%] xs:w-full">
+            <p class="font-normal text-base leading-[162%] text-[gray]">
+              I’m interested in freelance opportunities. However, if you have
+              other request or question, don’t hesitate to contact me
+            </p>
+          </div>
+
+          <div class="r sm:w-auto xs:w-full">
+            <div
+              class="box flex flex-col gap-2 border border-solid border-[gray] p-[10px] sm:w-[280px] xs:w-full items-start"
+            >
+              <p class="font-semibold text-base text-white">Message me here</p>
+              <a
+                class="font-semibold text-base text-[gray] hover:text-white transition-[1s] cursor-pointer"
+                href="https://discord.com/"
+                ><i class="fa-brands fa-discord"></i>!Astro07</a
+              >
+              <a
+                class="font-semibold text-base text-[gray] hover:text-white transition-[1s] cursor-pointer"
+                href="https://astrumastro07@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>astrumastro07@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end-->
+
+    <hr class="text-white my-[40px]" />
+
+    <!-- footer start -->
+    <footer class="my-[20px]">
+      <div class="mycontainer py-[30px]">
+        <div class="p flex sm:flex-row xs:flex-col  items-start justify-between gap-4">
+          <div class="l">
+            <p class="flex items-center gap-10">
+              <a class="flex items-center gap-2 text-white" href="./index.html"
+                ><svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0.5H8V4.5H4H0V8.5V12.5V16.5H4H8V12.5H12H16V8.5V4.5V0.5H12ZM4 12.5H8V8.5H12V4.5H8V8.5H4V12.5Z"
+                    fill="white"
+                  /></svg
+                >Alem</a
+              >
+              <a
+                class="hover:text-white transition-[1s] cursor-pointer text-[gray]"
+                href="astrumastro07@gmail.com"
+                >astrumastro07@gmail.com</a
+              >
+            </p>
+
+            <p class="font-normal text-base text-[gray]">
+              Web designer and front-end developer
+            </p>
+          </div>
+
+          <div class="r">
+            <p class="text-white text-2xl">Media</p>
+               <div
+        class=" flex text-center  gap-4 mt-1.5 "
+      >
+        
+        <button class="text-[rgb(162,168,180)] text-2xl animate-pulse">
+          <a href="https://github.com/Astrum-07" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </button>
+        <button class="text-[rgb(162,168,180)] text-2xl animate-pulse">
+          <a href="https://dribbble.com/astro-astrum" target="_blank"
+            ><i class="fa-brands fa-dribbble"></i
+          ></a>
+        </button>
+        <button class="text-[rgb(162,168,180)] text-2xl animate-pulse">
+          <a href="https://www.figma.com/@astroastrum" target="_blank"
+            ><i class="fa-brands fa-figma"></i
+          ></a>
+        </button>
+      </div>
+        </div>
+        </div>
+        <div class="font-normal text-base text-[gray] text-center mt-[30px]">© Copyright 2025. Made by <a class="text-white" href="https://t.me/alem_42">Alem</a></div>
+      </div>
+    </footer>
+    <!-- footer end-->
+    </main>
+    <script src="./main.js"></script>
+  </body>
 </html>
